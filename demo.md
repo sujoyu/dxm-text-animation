@@ -1,11 +1,11 @@
 ---
 layout: default
-title: README
+title: demo
 ---
 
-# DXM Console Effect
+<h1 class="dxm-effect">DXM Console Effect</h1>
 
-A text effect like the console in Demon X Machina (Nintendo Switch game).
+<p class="dxm-effect">A text effect like the console in Demon X Machina (Nintendo Switch game).</p>
 
 Customized from [blivesta/chaffle](https://github.com/blivesta/chaffle)
 
