@@ -11,23 +11,25 @@
     </style>
     <script src="DXMEffect.js"></script>
     <script>
-const elements = document.querySelectorAll('.dxm-effect');
-[].forEach.call(elements, function (el) {
-  const exmEffect = new DXMEffect(el, { 
-  speed: 30,
-  delay: 100,
+document.addEventListener('DOMContentLoaded', function() {
+  const elements = document.querySelectorAll('.dxm-effect');
+  [].forEach.call(elements, function (el) {
+    const exmEffect = new DXMEffect(el, { 
+    speed: 30,
+    delay: 100,
+    })
+    exmEffect.init()
   });
-  exmEffect.init();
-});
 
-const elementsSlow = document.querySelectorAll('.dxm-effect-slow');
-[].forEach.call(elementsSlow, function (el) {
-  const exmEffect = new DXMEffect(el, { 
-  speed: 300,
-  delay: 1000,
-  });
-  exmEffect.init();
-});
+  const elementsSlow = document.querySelectorAll('.dxm-effect-slow');
+  [].forEach.call(elementsSlow, function (el) {
+    const exmEffect = new DXMEffect(el, { 
+    speed: 300,
+    delay: 1000,
+    })
+    exmEffect.init()
+  })
+})
     </script>
   </head>
   <body>
