@@ -35,8 +35,8 @@ Customized from [blivesta/chaffle](https://github.com/blivesta/chaffle)
 const elements = document.querySelectorAll('.dxm-effect');
 [].forEach.call(elements, function (el) {
     const exmEffect = new DXMEffect(el, { 
-    speed: 30,
-    delay: 100,
+    speed: 300,
+    delay: 1000,
     });
     exmEffect.init();
 });
