@@ -46,7 +46,7 @@ const elements = document.querySelectorAll('.dxm-effect');
 <p class="dxm-effect" data-dxmeffect-start-delay="1000">The quick brown fox jumps over the lazy dog.</p>
 ```
 
-### Srialize Multiple Animation
+### Serialize Multiple Animation
 
 ```html
 <p id="effect1" class="dxm-effect">The quick brown fox jumps over the lazy dog.</p>
@@ -57,3 +57,13 @@ const elements = document.querySelectorAll('.dxm-effect');
 ## Note
 - Recomended using monospaced fonts.
 - Content text is ONLY plain text. Don't contain unecessary white spaces and new lines.(Because DXM Effect using `white-space: pre;` style.)
+
+## Options
+
+| HTML data attribute        | JS option object | Type   | Description                                                             | Default |
+|----------------------------|------------------|--------|-------------------------------------------------------------------------|---------|
+| data-dxmeffect             | lang             | string | Random character's language. ('en', 'ja', 'ja-hiragana', 'ja-katakana') | 'en'    |
+| data-dxmeffect-speed       | speed            | int    | Random character's changing span. (ms)                                  | 20      |
+| data-dxmeffect-delay       | delay            | int    | Rendering span between each character. (ms)                             | 100     |
+| data-dxmeffect-after       | after            | string | Query string of element that must finished before starts.               | -       |
+| data-dxmeffect-start-delay | startDelay       | int    | Starting animation delay. (ms)                                          | 0       |
