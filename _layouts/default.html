@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <style>
+    html, body {
+      font-family: 'Inconsolata', monospace;
+    }
+    </style>
+    <script src="../DXMEffect.js"></script>
+    <script>
+const elements = document.querySelectorAll('.dxm-effect');
+[].forEach.call(elements, function (el) {
+  const exmEffect = new DXMEffect(el, { 
+  speed: 30,
+  delay: 100,
+  });
+  exmEffect.init();
+});
+
+const elementsSlow = document.querySelectorAll('.dxm-effect-slow');
+[].forEach.call(elementsSlow, function (el) {
+  const exmEffect = new DXMEffect(el, { 
+  speed: 300,
+  delay: 1000,
+  });
+  exmEffect.init();
+});
+    </script>
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>
