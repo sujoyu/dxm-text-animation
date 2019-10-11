@@ -4,33 +4,31 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://pages-themes.github.io/midnight/assets/css/style.css?v=b1d65216c39e1cb350e6309b09630d3befa1147c" rel="stylesheet">
     <style>
-    @import "jekyll-theme-midnight";
     html, body {
       font-family: 'Inconsolata', monospace;
     }
     </style>
-    <script src="DXMEffect.js"></script>
+    <script src="../DXMEffect.js"></script>
     <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const elements = document.querySelectorAll('.dxm-effect');
-  [].forEach.call(elements, function (el) {
-    const exmEffect = new DXMEffect(el, { 
-    speed: 30,
-    delay: 100,
-    })
-    exmEffect.init()
+const elements = document.querySelectorAll('.dxm-effect');
+[].forEach.call(elements, function (el) {
+  const exmEffect = new DXMEffect(el, { 
+  speed: 30,
+  delay: 100,
   });
+  exmEffect.init();
+});
 
-  const elementsSlow = document.querySelectorAll('.dxm-effect-slow');
-  [].forEach.call(elementsSlow, function (el) {
-    const exmEffect = new DXMEffect(el, { 
-    speed: 300,
-    delay: 1000,
-    })
-    exmEffect.init()
-  })
-})
+const elementsSlow = document.querySelectorAll('.dxm-effect-slow');
+[].forEach.call(elementsSlow, function (el) {
+  const exmEffect = new DXMEffect(el, { 
+  speed: 300,
+  delay: 1000,
+  });
+  exmEffect.init();
+});
     </script>
   </head>
   <body>
