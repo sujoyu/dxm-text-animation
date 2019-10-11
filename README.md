@@ -4,6 +4,8 @@
 
 Customized from [blivesta/chaffle](https://github.com/blivesta/chaffle)
 
+[DEMO](https://sujoyu.github.io/dxm-text-animation/demo)
+
 ## Installation
 
 ```html
