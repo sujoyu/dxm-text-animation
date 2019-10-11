@@ -42,8 +42,8 @@ jumps over the lazy dog.</p>
 const elements = document.querySelectorAll('.dxm-effect');
 [].forEach.call(elements, function (el) {
     const dxmEffect = new DXMEffect(el, { 
-    speed: 30,
-    delay: 100,
+    speed: 300,
+    delay: 1000,
     })
     dxmEffect.init()
 })
