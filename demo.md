@@ -19,9 +19,9 @@ Customized from [blivesta/chaffle](https://github.com/blivesta/chaffle)
       const exmEffect = new DXMEffect(el, { 
       speed: 30,
       delay: 100,
-      });
-      exmEffect.init();
-  });
+      })
+      exmEffect.init()
+  })
 </script>
 ```
 
@@ -42,9 +42,9 @@ const elements = document.querySelectorAll('.dxm-effect');
     const exmEffect = new DXMEffect(el, { 
     speed: 30,
     delay: 100,
-    });
-    exmEffect.init();
-});
+    })
+    exmEffect.init()
+})
 ```
 
 <p class="dxm-effect-slow">The quick brown fox jumps over the lazy dog.</p>
