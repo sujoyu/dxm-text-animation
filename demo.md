@@ -61,13 +61,13 @@ const elements = document.querySelectorAll('.dxm-effect');
 
 ```html
 <p id="effect1" class="dxm-effect">The quick brown fox jumps over the lazy dog.</p>
-<p id="effect2" class="dxm-effect" data-dxmeffect-after="effect1">The quick brown fox jumps over the lazy dog.</p>
-<p id="effect3" class="dxm-effect" data-dxmeffect-after="effect2">The quick brown fox jumps over the lazy dog.</p>
+<p id="effect2" class="dxm-effect" data-dxmeffect-after="#effect1">The quick brown fox jumps over the lazy dog.</p>
+<p id="effect3" class="dxm-effect" data-dxmeffect-after="#effect2">The quick brown fox jumps over the lazy dog.</p>
 ```
 
 <p id="effect1" class="dxm-effect">The quick brown fox jumps over the lazy dog.</p>
-<p id="effect2" class="dxm-effect" data-dxmeffect-after="effect1">The quick brown fox jumps over the lazy dog.</p>
-<p id="effect3" class="dxm-effect" data-dxmeffect-after="effect2">The quick brown fox jumps over the lazy dog.</p>
+<p id="effect2" class="dxm-effect" data-dxmeffect-after="#effect1">The quick brown fox jumps over the lazy dog.</p>
+<p id="effect3" class="dxm-effect" data-dxmeffect-after="#effect2">The quick brown fox jumps over the lazy dog.</p>
 
 ## Note
 - Recomended using monospaced fonts.
